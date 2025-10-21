@@ -23,16 +23,21 @@ This repository contains 5 C programs demonstrating concepts such as loops, patt
 ---
 
 ### 1. Print 1 to n Odd Numbers
-*Aim:* Print all odd numbers from 1 to a user-provided number n.  
+
+*Aim:*
+
+Print all odd numbers from 1 to a user-provided number n.  
 
 *Algorithm:*  
+
 1. Ask the user to input a number n.  
 2. Loop from 1 to n.  
 3. Check if the current number is odd (num % 2 != 0).  
 4. Print the odd numbers.
 
 *source code*
-c
+
+```c
 #include<stdio.h>
 int main()
 {
@@ -43,28 +48,35 @@ int main()
     }
     return 0;
 }
+```
 
 *output*
 
 <img width="575" height="160" alt="image" src="https://github.com/user-attachments/assets/2cc1a847-974a-48ed-a56b-2eb453965a0d" />
 
 
-*Result:*  
+*Result:*
+
 The program displays all odd numbers from 1 up to the entered number n.
 
 ---
 
-### 2. Hollow Square Pattern using For Loop
-*Aim:* Print a hollow square pattern of size n using for loops.  
+# 2. Hollow Square Pattern using For Loop
 
-*Algorithm:*  
+*Aim:*
+
+Print a hollow square pattern of size n using for loops.  
+
+*Algorithm:*
+
 1. Ask the user to input the size n of the square.  
 2. Loop through rows (1 to n) and columns (1 to n).  
 3. Print * for the borders (first row, last row, first column, last column).  
 4. Print space for inner positions.
 
 *source code*
-c
+
+```c
 #include<stdio.h>
 int main()
 {
@@ -82,6 +94,7 @@ int main()
                     }
     return 0;
 }
+```
 
 *output*
 
@@ -89,24 +102,27 @@ int main()
 
 
 *Result:*  
+
 The program successfully prints a hollow square pattern of stars (*) with the given size.
-
-
-
 
 ---
 
 ### 3. Factorial of a Number using Function (Without Return Type, With Arguments)
-*Aim:* Find the factorial of a given number using a function without return type but with arguments.  
 
-*Algorithm:*  
+*Aim:* 
+
+Find the factorial of a given number using a function without return type but with arguments.  
+
+*Algorithm:*
+
 1. Ask the user to input a number n.  
 2. Create a function factorial(int n) that calculates the factorial.  
 3. Use a loop inside the function to compute factorial.  
 4. Print the factorial from within the function.
 
 *source code*
-c
+
+```c
 #include<stdio.h>
 void fact(int num)
 {
@@ -125,6 +141,7 @@ int main()
     fact(n);
     return 0;
 }
+```
 
 *output*
 
@@ -133,24 +150,27 @@ int main()
 
 
 *Result:*  
+
 The program computes and displays the factorial of the entered number using a function with arguments and no return type.
-
-
-
 
 ---
 
 ### 4. Check Palindrome using For Loop
-*Aim:* Check if the input entered by the user is a palindrome.  
+
+*Aim:*
+
+Check if the input entered by the user is a palindrome.  
 
 *Algorithm:*  
+
 1. Ask the user to input a number.  
 2. Store the input in a variable.  
 3. Use a for loop to compare the characters/digits from start and end.  
 4. If all characters/digits match, it is a palindrome; else it is not.
 
 *source code*
-c
+
+```c
 #include<stdio.h>
 int main()
 {
@@ -172,6 +192,7 @@ int main()
         printf("Not a Palindrome Number");
     }
     return 0;
+```
 
     
 *output*
@@ -181,6 +202,7 @@ int main()
 
 
 *Result:*  
+
 The program determines and displays whether the given number is a palindrome.
 
 
@@ -188,16 +210,21 @@ The program determines and displays whether the given number is a palindrome.
 ---
 
 ### 5. Multiplication Table using Do-While Loop
-*Aim:* Print the multiplication table of a user-provided number using a do-while loop.  
+
+*Aim:*
+
+Print the multiplication table of a user-provided number using a do-while loop.  
 
 *Algorithm:*  
+
 1. Ask the user to input a number n.  
 2. Initialize a counter i = 1.  
 3. Use a do-while loop to multiply n by i and print the result.  
 4. Increment i until it reaches 10.
 
 *source code*
-c
+
+```c
 #include <stdio.h>
 
 int main()
@@ -214,6 +241,7 @@ int main()
  return 0;
 
 }
+```
 
 
 *output*
@@ -221,5 +249,6 @@ int main()
 <img width="639" height="139" alt="image" src="https://github.com/user-attachments/assets/453e9fc4-031f-4fb0-ace3-f3170666d1d8" />
 
 
-*Result:*  
+*Result:* 
+
 The program prints the complete multiplication table of the user-entered number from 1 to 10 using a do-while loop.
