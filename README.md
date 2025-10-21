@@ -12,15 +12,53 @@ This repository contains 5 C programs demonstrating concepts such as loops, patt
 ---
 
 ## Programs Included
-1. Print 1 to n Odd Numbers  
-2. Hollow Square Pattern using For Loop  
-3. Factorial of a Number using Function (Without Return Type, With Arguments)  
-4. Check Palindrome using For Loop  
-5. Multiplication Table using Do-While Loop  
+1. Multiplication Table using Do-While Loop
+2. Print 1 to n Odd Numbers  
+3. Hollow Square Pattern using For Loop  
+4. Factorial of a Number using Function (Without Return Type, With Arguments)  
+5. Check Palindrome using For Loop  
+  
 
 ---
 
-### 1. Print 1 to n Odd Numbers
+### 1. Multiplication Table using Do-While Loop
+**Aim:** Print the multiplication table of a user-provided number using a `do-while` loop.  
+
+**Algorithm:**  
+1. Ask the user to input a number `n`.  
+2. Initialize a counter `i = 1`.  
+3. Use a `do-while` loop to multiply `n` by `i` and print the result.  
+4. Increment `i` until it reaches 10.
+
+**source code**
+```c
+#include <stdio.h>
+
+int main()
+{
+ int num,i=1;
+ scanf("%d", &num);
+ do {
+     printf("%d ",num*i);
+     i++;
+    }
+    while(i<=num);
+    
+     
+ return 0;
+
+}
+```
+
+**output**
+
+<img width="639" height="139" alt="image" src="https://github.com/user-attachments/assets/453e9fc4-031f-4fb0-ace3-f3170666d1d8" />
+
+
+**Result:**  
+The program prints the complete multiplication table of the user-entered number from 1 to 10 using a do-while loop.
+
+### 2. Print 1 to n Odd Numbers
 **Aim:** Print all odd numbers from 1 to a user-provided number `n`.  
 
 **Algorithm:**  
@@ -51,7 +89,7 @@ The program displays all odd numbers from 1 up to the entered number `n`.
 
 ---
 
-### 2. Hollow Square Pattern using For Loop
+### 3. Hollow Square Pattern using For Loop
 **Aim:** Print a hollow square pattern of size `n` using `for` loops.  
 
 **Algorithm:**  
@@ -93,7 +131,7 @@ The program successfully prints a hollow square pattern of stars (`*`) with the 
 
 ---
 
-### 3. Factorial of a Number using Function (Without Return Type, With Arguments)
+### 4. Factorial of a Number using Function (Without Return Type, With Arguments)
 **Aim:** Find the factorial of a given number using a function without return type but with arguments.  
 
 **Algorithm:**  
@@ -137,7 +175,7 @@ The program computes and displays the factorial of the entered number using a fu
 
 ---
 
-### 4. Check Palindrome using For Loop
+### 5. Check Palindrome using For Loop
 **Aim:** Check if the input entered by the user is a palindrome.  
 
 **Algorithm:**  
@@ -184,39 +222,3 @@ The program determines and displays whether the given number is a palindrome.
 
 ---
 
-### 5. Multiplication Table using Do-While Loop
-**Aim:** Print the multiplication table of a user-provided number using a `do-while` loop.  
-
-**Algorithm:**  
-1. Ask the user to input a number `n`.  
-2. Initialize a counter `i = 1`.  
-3. Use a `do-while` loop to multiply `n` by `i` and print the result.  
-4. Increment `i` until it reaches 10.
-
-**source code**
-```c
-#include <stdio.h>
-
-int main()
-{
- int num,i=1;
- scanf("%d", &num);
- do {
-     printf("%d ",num*i);
-     i++;
-    }
-    while(i<=num);
-    
-     
- return 0;
-
-}
-```
-
-**output**
-
-<img width="639" height="139" alt="image" src="https://github.com/user-attachments/assets/453e9fc4-031f-4fb0-ace3-f3170666d1d8" />
-
-
-**Result:**  
-The program prints the complete multiplication table of the user-entered number from 1 to 10 using a do-while loop.
